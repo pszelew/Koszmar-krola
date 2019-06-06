@@ -1,19 +1,22 @@
 # depslib dependency file v1.0
-1559848172 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\main.cpp
+1559853403 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\main.cpp
 	<iostream>
 	"graf_lista.h"
 	"plansza.h"
 
-1559849272 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\plansza.cpp
+1559853844 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\plansza.cpp
 	"plansza.h"
 
-1559848000 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\plansza.h
+1559853605 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\plansza.h
 	"graf_lista.h"
+	<iostream>
 
-1559848162 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\graf_lista.h
+1559852731 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\graf_lista.h
 	"graf.h"
+	<stack>
+	<vector>
 
-1559837998 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\graf.h
+1559852737 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\graf.h
 	<fstream>
 	<chrono>
 	<iostream>
@@ -28,6 +31,6 @@
 	<cstdlib>
 	<string>
 
-1559848155 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\graf_lista.cpp
+1559852985 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\graf_lista.cpp
 	"graf_lista.h"
 

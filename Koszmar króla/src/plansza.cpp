@@ -15,6 +15,7 @@ plansza::plansza():  krol(7), wieza(0), grafik(25, 22)  //graf 25 wierzcholkow, 
         {
             if(ruchMozliwy(i,j)&&!grafik.czy_krawedz(i,j))
             {
+                std::cout<< i<<" --> "<<j<<std::endl;
                 grafik.dodaj_krawedz(i, j, 1); //tworzymy graf nieskierowany
             }
         }
@@ -30,6 +31,8 @@ bool plansza::ruchMozliwy(int a, int b) // z a ---> b
 {
     //czy nie kolidujemy z wieza
     if(wieza/5==b/5||(b-wieza)%5==0)  //jesli pole na ktore sie ruszamy jest w tym samym wierszu lub kolumnie co wieza
+        return false;
+    if(wieza/5==a/5||(a-wieza)%5==0)  //jesli pole na ktore sie ruszamy jest w tym samym wierszu lub kolumnie co wieza
         return false;
     //czy nie wychodzimy poza plasze
     if(b<0||b>24)

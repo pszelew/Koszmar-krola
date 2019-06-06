@@ -2,8 +2,7 @@
 #ifndef PLANSZA_H
 #define PLANSZA_H
 #include "graf_lista.h"
-
-
+#include <iostream>
 class plansza
 {
     private:

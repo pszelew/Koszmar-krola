@@ -24,6 +24,8 @@ class graf //interfejs grafu
         virtual bool czy_krawedz(int a, int b)=0;
         virtual int ilosc_sasiadow(int a)=0;
         virtual int waga_krawedzi(int a, int b)=0;
+        virtual void dfs(int aktualny)=0;
+        virtual int ilosc_wierzcholkow()=0;
         //virtual void test_efektywnosci(int ilosc_wierzcholkow, int gestosc_grafu)=0;
 };
 
