@@ -1,16 +1,15 @@
 #ifndef DFS_H
 #define DFS_H
+#include "graf_lista.h"
 
-
-class DFS
+class dfs
 {
-    public:
-        DFS();
-        virtual ~DFS();
-
-    protected:
-
     private:
+
+    public:
+        dfs();
+        virtual ~dfs();
+        static void doDFS(const graf_lista &grafik, int aktualny);
 };
 
 #endif // DFS_H

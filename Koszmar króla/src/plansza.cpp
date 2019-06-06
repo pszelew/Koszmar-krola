@@ -13,10 +13,11 @@ plansza::plansza():  krol(7), wieza(0), grafik(25, 22)  //graf 25 wierzcholkow, 
     for(int i=0;i<25;i++)
         for(int j=0;j<25;j++)
         {
-            if(ruchMozliwy(i,j)&&!grafik.czy_krawedz(i,j))
+            if(ruchMozliwy(i,j))
             {
                 std::cout<< i<<" --> "<<j<<std::endl;
-                grafik.dodaj_krawedz(i, j, 1); //tworzymy graf nieskierowany
+                if(!grafik.czy_krawedz(i,j))
+                    grafik.dodaj_krawedz(i, j, 1); //tworzymy graf nieskierowany
             }
         }
 }
@@ -41,28 +42,28 @@ bool plansza::ruchMozliwy(int a, int b) // z a ---> b
     int temp=b-a;
 
     //czy da sie jeden w prawo dwa do gory
-    if(temp==-9&&b%5<=3&&b/5>=2)
+    if(temp==-9&&a%5<=3&&a/5>=2)
         return true;
     //czy da sie jeden w prawo dwa do dolu
-    if(temp==11&&b%5<=3&&b/5<=2)
+    if(temp==11&&a%5<=3&&a/5<=2)
         return true;
     //czy da sie dwa w prawo jeden do gory
-    if(temp==-3&&b%5<=2&&b/5>=1)
+    if(temp==-3&&a%5<=2&&a/5>=1)
         return true;
     //czy da sie dwa w prawo jeden do dolu
-    if(temp==7&&b%5<=2&&b/5<=4)
+    if(temp==7&&a%5<=2&&a/5<=4)
         return true;
     //czy da sie jeden w lewo dwa do gory
-    if(temp==-11&&b%5>=1&&b/5>=2)
+    if(temp==-11&&a%5>=1&&a/5>=2)
         return true;
     //czy da sie jeden w lewo dwa do dolu
-    if(temp==11&&b%5>=1&&b/5<=2)
+    if(temp==9&&a%5>=1&&a/5<=2)
         return true;
     //czy da sie dwa w lewo jeden do gory
-    if(temp==-3&&b%5>=2&&b/5>=1)
+    if(temp==-7&&a%5>=2&&a/5>=1)
         return true;
     //czy da sie dwa w lewo jeden do dolu
-    if(temp==7&&b%5>=2&&b/5<=4)
+    if(temp==3&&a%5>=2&&a/5<=4)
         return true;
     return false;
 

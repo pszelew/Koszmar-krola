@@ -32,7 +32,7 @@ void graf_lista::dodaj_krawedz(int a, int b, int waga)
 }
 
 
-bool graf_lista::czy_krawedz(int a, int b)
+bool graf_lista::czy_krawedz(int a, int b) const
 {
     for(int i=0; i<ilosc_sasiadow(a);i++)
     {
@@ -44,7 +44,7 @@ bool graf_lista::czy_krawedz(int a, int b)
 
 }
 
-int graf_lista::ilosc_sasiadow(int a)
+int graf_lista::ilosc_sasiadow(int a) const
 {
     int i=0;
     element<wezel_docelowy> *temp=_tablica[a].glowa_listy();
@@ -196,41 +196,3 @@ int graf_lista::waga_krawedzi(int a, int b) //zwracamy wage krawedzi a->b
  }
 
 
-void graf_lista::dfs(int aktualny)
-{
-    //dobra, teraz musimy utworzyc stos Frontier
-    std::vector <int> odwiedzone;
-    std::stack <int> doRozpatrzenia;
-
-    bool _odwiedzone[ilosc_wierzcholkow()]; //opowiedniej wielkosci tablica
-
-    for(int i=0;i<ilosc_wierzcholkow();i++)
-        _odwiedzone[i] = false;
-
-    doRozpatrzenia.push(aktualny); //dodajemy pierwszy element do stosu
-    while(!doRozpatrzenia.empty()) //dopoki stos nie bedzie pusty
-	{
-	    aktualny=doRozpatrzenia.top();
-	    doRozpatrzenia.pop();
-	    printf("\nOdwiedzam: %d\n",aktualny);
-	    odwiedzone.push_back(aktualny);  //dodajemy jako element juz odwiedzony
-
-	    _odwiedzone[aktualny]=true;
-
-
-        for(int i=0;i<ilosc_wierzcholkow();i++) //przeszukujemy nasz graf
-		{
-			if(czy_krawedz(aktualny, i) && _odwiedzone[i] == false)
-			{
-				doRozpatrzenia.push(i);//Wrzucamy na stos jego s¹siadów
-				_odwiedzone[i] = true;//Znaznaczamy ,¿e go odwiedzimy!(w niedalekiej przysz³oœci)
-				//Inaczej bêdziemy mieli np tak¹ sytuacjê w stosie 2,3,4,2 <-- 2x dwójka
-			}
-		}
-
-
-
-	}
-
-
-}

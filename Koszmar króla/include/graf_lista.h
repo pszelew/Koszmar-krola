@@ -14,13 +14,12 @@ class graf_lista: public graf
         graf_lista(int wierzcholki, int startowy); //wczytanie grafu
         virtual ~graf_lista();
         virtual void dodaj_krawedz(int a, int b, int waga);
-        virtual bool czy_krawedz(int a, int b);
-        virtual int ilosc_sasiadow(int a);
-        virtual int ilosc_wierzcholkow(){return n;};
+        virtual bool czy_krawedz(int a, int b) const ;
+        virtual int ilosc_sasiadow(int a)const;
+        virtual int ilosc_wierzcholkow() const {return n;};
         virtual int waga_krawedzi(int a, int b);
         int wartosc(int a, int b){return _tablica[a].zwroc_wartosc(b)._numer;};
         virtual void dijkstra(std::string nazwa_pliku);
-        virtual void dfs(int aktualny);
       //  virtual void test_efektywnosci(int ilosc_wierzcholkow, int gestosc_grafu);
 };
 

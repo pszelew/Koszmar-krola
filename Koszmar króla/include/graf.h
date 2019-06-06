@@ -21,11 +21,10 @@ class graf //interfejs grafu
     public:
         virtual void dodaj_krawedz(int a, int b, int waga)=0;
         virtual void dijkstra(std::string nazwa_pliku)=0;
-        virtual bool czy_krawedz(int a, int b)=0;
-        virtual int ilosc_sasiadow(int a)=0;
+        virtual bool czy_krawedz(int a, int b) const =0;
+        virtual int ilosc_sasiadow(int a) const =0;
         virtual int waga_krawedzi(int a, int b)=0;
-        virtual void dfs(int aktualny)=0;
-        virtual int ilosc_wierzcholkow()=0;
+        virtual int ilosc_wierzcholkow() const =0;
         //virtual void test_efektywnosci(int ilosc_wierzcholkow, int gestosc_grafu)=0;
 };
 
