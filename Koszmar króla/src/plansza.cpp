@@ -15,7 +15,6 @@ plansza::plansza():  krol(7), wieza(0), grafik(25, 22)  //graf 25 wierzcholkow, 
         {
             if(ruchMozliwy(i,j))
             {
-                std::cout<< i<<" --> "<<j<<std::endl;
                 if(!grafik.czy_krawedz(i,j))
                     grafik.dodaj_krawedz(i, j, 1); //tworzymy graf nieskierowany
             }

@@ -13,6 +13,7 @@ class plansza
     public:
         graf_lista grafik; //tworzymy graf oparty na listach stanowiacy dla nas graf wszystkich sytuacji na planszy
         plansza();
+        int getKrol() const {return krol;};
         virtual ~plansza();
 };
 
