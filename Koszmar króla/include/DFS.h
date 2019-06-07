@@ -9,7 +9,7 @@ class dfs
     public:
         dfs();
         virtual ~dfs();
-        static void doDFS(const plansza &plansz, int aktualny);
+        static void doDFS(const plansza &plansz, int start, int cel);
 };
 
 #endif // DFS_H

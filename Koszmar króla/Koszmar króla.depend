@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1559891236 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\main.cpp
+1559906064 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\main.cpp
 	<iostream>
 	"graf_lista.h"
 	"plansza.h"
 	"DFS.h"
+	"aGwiazdka.h"
 
-1559891425 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\plansza.cpp
+1559903176 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\plansza.cpp
 	"plansza.h"
 
-1559859858 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\plansza.h
+1559905601 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\plansza.h
 	"graf_lista.h"
 	<iostream>
 
@@ -35,10 +36,18 @@
 1559857897 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\graf_lista.cpp
 	"graf_lista.h"
 
-1559891376 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\dfs.cpp
+1559906000 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\dfs.cpp
 	"dfs.h"
 
-1559859753 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\dfs.h
+1559904420 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\dfs.h
 	"graf_lista.h"
 	"plansza.h"
+
+1559906052 source:c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\src\agwiazdka.cpp
+	"aGwiazdka.h"
+
+1559902897 c:\users\patryk\documents\ksi¹¿ki studia\pamsi\projekty\koszmar króla\koszmar króla\include\agwiazdka.h
+	"plansza.h"
+	<cmath>
+	<windows.h>
 

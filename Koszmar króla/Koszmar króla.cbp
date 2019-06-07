@@ -37,10 +37,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/DFS.h" />
+		<Unit filename="include/aGwiazdka.h" />
 		<Unit filename="include/graf.h" />
 		<Unit filename="include/graf_lista.h" />
 		<Unit filename="include/plansza.h" />
 		<Unit filename="src/DFS.cpp" />
+		<Unit filename="src/aGwiazdka.cpp" />
 		<Unit filename="src/graf_lista.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/plansza.cpp" />

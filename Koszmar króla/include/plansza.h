@@ -6,11 +6,12 @@
 class plansza
 {
     private:
-        char tab[25];  //tablica przechowujaca litery odpowiadajace danym polom w tablicy
+          //tablica przechowujaca litery odpowiadajace danym polom w tablicy
         int krol;
         int wieza;
         bool ruchMozliwy(int a, int b);
     public:
+        char tab[25];
         graf_lista grafik; //tworzymy graf oparty na listach stanowiacy dla nas graf wszystkich sytuacji na planszy
         plansza();
         int getKrol() const {return krol;};
