@@ -88,10 +88,12 @@ std::vector <int> aGwiazdka::doAGwiazdka(const plansza &plansz, int start, int c
 
         if(x==cel)  //koniec funkcji - wypiszmy co sie da
         {
+            odwiedzone.push_back(x);
+            f_score[x]=g_score[x]+h_score[x];
             std::cout<<"A*: Odwiedzone wierzcholki"<<std::endl;
             for(int i=0;i<odwiedzone.size();i++)
             {
-                std::cout<<plansz.tab[odwiedzone[i]]<<" "<< i+1<< ", f="<<f_score[odwiedzone[i]]<<", f="<<h_score[odwiedzone[i]]<< ", g="<<g_score[odwiedzone[i]]<<std::endl;
+                std::cout<<plansz.tab[odwiedzone[i]]<<" "<< i+1<< ", f="<<f_score[odwiedzone[i]]<<", h="<<h_score[odwiedzone[i]]<< ", g="<<g_score[odwiedzone[i]]<<std::endl;
 
             }
 

@@ -19,6 +19,7 @@ int main()
     //A gwiazdka
     temp=aGwiazdka::doAGwiazdka(_plansza, 22, 7);
 
+    _plansza.grafik.dijkstra("wyniki.txt");
 
     std::cout<<std::endl<<"A*: Sciezka znaleziona przez algorytm"<<std::endl;
     for(it=temp.end()-1;it>=temp.begin();--it)

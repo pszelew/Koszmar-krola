@@ -48,7 +48,7 @@ void dfs::doDFS(const plansza &plansz, int start, int cel)
 		{
 			if(plansz.grafik.czy_krawedz(start, i) && _odwiedzone[i] == false)
 			{
-				doRozpatrzenia.push(i);//Wrzucamy na stos jego s¹siadów
+				doRozpatrzenia.push(i);//Wrzucamy na stos jego sasiadów
 			}
 		}
 
